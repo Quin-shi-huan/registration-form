@@ -34,9 +34,44 @@
 
     --font-family: "Poppins", serif;
 
-    --heading-1: 800 32px/120% var(--font-family);
-    --heading-2: 800 24px/120% var(--font-family);
-    --heading-3: 800 20px/120% var(--font-family);
-    --heading-4: 800 16px/120% var(--font-family);
+    --aside-heading: 600 2.5rem/125% var(--font-family);
+    --heading-1: 800 2rem/120% var(--font-family);
+    --heading-2: 800 1.5rem/125% var(--font-family);
+    --heading-3: 800 1.25rem/120% var(--font-family);
+    --heading-4: 800 1rem/120% var(--font-family);
+    --paragraph: 400 1rem/150% var(--font-family)
+}
 
+body{
+    overflow: hidden;
+
+    font: var(--paragraph);
+    color: var(--text-secondary);
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: 4rem;
+}
+
+.aside_heading{
+    font: var(--aside-heading);
+    color: var(--text-primary);
+}
+
+.heading1{
+    font: var(--heading-1);
+    color: var(--text-primary);
+}
+
+.text-highlight{
+    color: var(--text-highlight);
+}
+
+.paragraph{
+    font: var(--paragraph);
 }

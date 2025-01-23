@@ -1,0 +1,58 @@
+#layout{
+    display: grid;
+    grid-template-columns: 51.25% 48.75%;
+
+    overflow: hidden;
+    height: 100vh;
+}
+
+main{
+    overflow: auto;
+    height: 100vh;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 33rem;
+    margin-left: auto;
+}
+
+.container-title{
+    font: 600 1.5rem/125% var(--font-family);
+    color: var(--text-primary);
+}
+
+.back{
+    display: flex;
+    gap: 0.5rem;
+
+    margin-block-end: 1.5rem;
+}
+
+aside{
+    background-color: var(--surface-secondary);
+    height: 53rem;
+}
+
+.aside-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 31rem;
+}
+
+.aside-content header{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.aside-content img:nth-child(1) {
+    width: 12.5rem;
+}
+
+.aside-content img:nth-child(2) {
+    margin-block-start: 2rem;
+}
