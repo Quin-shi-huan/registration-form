@@ -1,4 +1,5 @@
-@import url(fields/index.css);  
+@import url(fields/index.css); 
+
 form{
     margin-block-start: 3rem;
 }
@@ -15,13 +16,12 @@ form{
     color: var(--text-primary);
 }
 
-.input-wrapper{
+.select-wrapper{
     display: flex;
     flex-direction: column;
 }
 
-
-.select-wrapper{
+.input-wrapper{
     display: flex;
     flex-direction: column;
 }
