@@ -22,6 +22,44 @@
                     <h1 class="container-title">Resgistration Form</h1>
                     <p>Fill in the details below to enroll your child at the Estrelas do Amanhã early childhood education school.</p>
                 </div>
+
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="form_content">
+                        <legend class="legend_text">Child information</legend>
+
+                        <div class="input-wrapper">
+                            <label for="name">Full name</label>
+                            <input type="text" minlength="16" name="name" id="name" required placeholder="Your child name here..." >
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <label for="birth">Birth date</label>
+                            <input type="date" name="birth" id="birth" lang="pt-BR" required placeholder="Your child birth date here...">
+                        </div>
+                        
+                        <div class="select-wrapper">
+                            <label for="gender">Gender</label>
+                            <select name="gender" id="gender" required>
+                                <option value=""></option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="na">I prefer not to answer</option>
+                            </select>
+                        </div>
+
+                        <div class="textarea-wrapper">
+                            <label for="medical_information">Medical information</label>
+                            <textarea name="medical_information" id="medical_information" cols="4" rows="10" placeholder="Does the child have any medical conditions that the school should be aware of?"></textarea>
+                        </div>
+
+                        <div class="file-wrapper">
+                            <label for="birth_certificate">Birth certificate</label>
+                            <input type="file" name="certificate" id="birth_certificate" multiple>
+                            <img src="assets/icons/cloud-upload.svg" alt="">
+                            <p>click here to <br> select files</p>
+                        </div>
+                    </fieldset>
+                </form>
             </main>
             
             <aside id="aside__container" class="container">

@@ -1,0 +1,42 @@
+form{
+    margin-block-start: 3rem;
+}
+
+.form_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.legend_text{
+    margin-block-end: 1.5rem;
+    font: 600 16px/125% var(--font-family);
+    color: var(--text-primary);
+}
+
+.input-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.select-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.textarea-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.file-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.file-wrapper img{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
