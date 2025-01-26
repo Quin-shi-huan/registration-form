@@ -9,6 +9,7 @@
 main{
     overflow: auto;
     height: 100vh;
+    margin-left: auto;
 }
 
 .main__container{
@@ -16,7 +17,6 @@ main{
     flex-direction: column;
     gap: 8px;
     max-width: 33rem;
-    margin-left: auto;
 }
 
 .container-title{

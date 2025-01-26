@@ -1,9 +1,10 @@
+@import url(fields/index.css);  
 form{
     margin-block-start: 3rem;
 }
 
 .form_content{
-    display: flex;
+    display: grid;
     flex-direction: column;
     gap: 1.5rem;
 }
