@@ -72,4 +72,30 @@ input{
         color: var(--text-primary);
         border: 1px solid var(--stroke-default);
     }
+
+    &:invalid{
+        border: 0.125rem solid var(--semantic-error);
+    }
+
+    & + small{
+        font: var(--paragraph-sm);
+        color: #78716C;
+        display: inline-block;
+        margin-block-start: .25rem;
+    }
+
+    &[required] + .error{
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--paragraph-sm);
+        color: var(--semantic-error);
+
+        margin-block-start: .25rem;
+    }
+
+    &:not(:focus):valid + .error{
+        display: none;
+    }
 }
