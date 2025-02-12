@@ -98,3 +98,9 @@ img {
 .paragraph {
     font: var(--paragraph);
 }
+
+@media (max-width: 51.25rem) {
+    body {
+        overflow-y: auto;
+    }
+}

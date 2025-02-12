@@ -1,27 +1,46 @@
 @import url(fields/index.css);
 
-form{
+form {
     margin-block-start: 3rem;
 }
 
-fieldset{
+fieldset {
     border: none;
 
     display: grid;
     gap: 1.5rem;
 }
 
-legend{
+legend {
     font: 600 1rem/1.25 var(--font-family);
     margin-block-end: 1.5rem;
 }
 
-fieldset + fieldset{
+fieldset+fieldset {
     margin-block-start: 3rem;
 }
 
-.actions-wrapper{
+.actions-wrapper {
     margin-block-start: 3rem;
     display: flex;
     gap: 1rem;
+}
+
+@media (max-width: 51.25em) {
+    .actions-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        & .btn-secondary {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+        }
+
+        & .btn-primary {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
